@@ -22,6 +22,19 @@ Parameters:
     Type: String
     Description: Google Ads Audience ID (User List ID)
 
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: amazon-pinpoint-googleads-channel
+    Description: Amazon Pinpoint GoogleAds Channel.  This application will add users to Google Ads Audiences.
+    Author: Amazon Pinpoint
+    SpdxLicenseId: MIT-0
+    LicenseUrl: LICENSE
+    ReadmeUrl: README.md
+    Labels: ['amazon-pinpoint', 'pinpoint', 'custom-channel', 'googleads', 'python']
+    HomePageUrl: https://aws.amazon.com/pinpoint
+    SemanticVersion: 1.0.0
+    SourceCodeUrl: https://github.com/aws-samples/amazon-pinpoint-googleads-channel
+
 Resources:
   PinpointGoogleAdsFunction:
     Type: AWS::Serverless::Function
